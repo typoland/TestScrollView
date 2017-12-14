@@ -42,9 +42,17 @@ class TestedView: NSView {
         firstClick = self.convert(event.locationInWindow, from: nil)
         Swift.print(firstClick)
     }
+    override func mouseDragged(with event: NSEvent) {
+        currentClick = self.convert(event.locationInWindow, from: nil)
+        refresh()
+    }
     override func mouseUp(with event: NSEvent) {
         currentClick = self.convert(event.locationInWindow, from: nil)
-        
+        refresh()
+
+    }
+    
+    func refresh () {
         let changeRect  = NSMakeRect(
             min(firstClick.x, currentClick.x),
             min(firstClick.y, currentClick.y),
@@ -55,8 +63,6 @@ class TestedView: NSView {
         Swift.print(currentClick, changeRect)
         needsDisplay = true
     }
-    
-    
     override func draw(_ dirtyRect: NSRect) {
         let drawStartTime = Date()
         
@@ -69,10 +75,7 @@ class TestedView: NSView {
             
             
             if currentBounds.intersects(rect) {
-                Swift.print("in rect...")
-                
-                //Swift.print("counter:\t\(counter)\t\t\(dirtyRect) \(currentBounds.intersects(dirtyRect))")
-                //NSColor.darkGray.set()
+
                 NSColor(calibratedWhite: CGFloat(Double(arc4random_uniform(100))/500.0+0.2), alpha: 1).setFill()
                 NSBezierPath(rect: dirtyRect).fill()
                 let al:CGFloat  = 250
@@ -97,9 +100,12 @@ class TestedView: NSView {
                     }
                 }
                 let duration = NSDateInterval(start: drawStartTime, end: Date()).duration
-                Swift.print(String(format : "\tcounter = %i,\ti = %i, \tduration %0.5f\tdrawed:%i\tmissed: %i\t TOTAL: %i", counter, i, duration, drawed, missed, drawed + missed))
-            } 
+                Swift.print(String(format : "\tcounter = %i,\ti = %i, \tduration %0.5f\tdrawed objects:%i\tmissed objects: %i\t TOTAL: %i objects", counter, i, duration, drawed, missed, drawed + missed))
+            } else {
+                Swift.print("\(counter) not in rect")
+            }
             counter = counter+1
+           
         }
         
     }
