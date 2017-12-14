@@ -69,7 +69,7 @@ class TestedView: NSView {
         needsDisplay = true
     }
     override func draw(_ dirtyRect: NSRect) {
-        //let drawStartTime = Date()
+        let drawStartTime = Date()
         
         var rects: UnsafePointer<CGRect>? = nil
         var i:Int = 0
@@ -104,13 +104,13 @@ class TestedView: NSView {
                         }
                     }
                 }
-               /*
+               
                 let duration = NSDateInterval(start: drawStartTime, end: Date()).duration
                 Swift.print(String(format : "\tcounter = %i,\ti = %i, \tduration %0.6f\tdrawed objects:%i\tmissed objects: %i\t TOTAL: %i objects", counter, i, duration, drawed, missed, drawed + missed))
             } else {
                 let duration = NSDateInterval(start: drawStartTime, end: Date()).duration
                 Swift.print(String(format: "\tcounter = %i\t  ____ \tduration: %0.6f ", counter, duration))
-             */
+            
             }
             counter = counter+1
            
