@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2573F1D1FE2C7FE00BE03C2 /* TestecClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2573F1C1FE2C7FE00BE03C2 /* TestecClipView.swift */; };
 		B2A1449F1FE141010007ACC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1449E1FE141010007ACC7 /* AppDelegate.swift */; };
 		B2A144A11FE141010007ACC7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A144A01FE141010007ACC7 /* Document.swift */; };
 		B2A144A41FE141010007ACC7 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A144A21FE141010007ACC7 /* Document.xib */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2573F1C1FE2C7FE00BE03C2 /* TestecClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestecClipView.swift; sourceTree = "<group>"; };
 		B2A1449B1FE141010007ACC7 /* ZoomWindowTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomWindowTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A1449E1FE141010007ACC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2A144A01FE141010007ACC7 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				B2A1449E1FE141010007ACC7 /* AppDelegate.swift */,
 				B2A144A01FE141010007ACC7 /* Document.swift */,
 				B2A144A21FE141010007ACC7 /* Document.xib */,
+				B2573F1C1FE2C7FE00BE03C2 /* TestecClipView.swift */,
 				B2A144B41FE142A70007ACC7 /* TestedView.swift */,
 				B2A144B61FE148700007ACC7 /* TestedScrollView.swift */,
 				B2A144A81FE141010007ACC7 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				B2A144A11FE141010007ACC7 /* Document.swift in Sources */,
 				B2A144B71FE148700007ACC7 /* TestedScrollView.swift in Sources */,
 				B2A1449F1FE141010007ACC7 /* AppDelegate.swift in Sources */,
+				B2573F1D1FE2C7FE00BE03C2 /* TestecClipView.swift in Sources */,
 				B2A144B51FE142A70007ACC7 /* TestedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
