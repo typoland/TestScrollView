@@ -13,6 +13,8 @@
 		B2A144A71FE141010007ACC7 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2A144A51FE141010007ACC7 /* Document.xcdatamodeld */; };
 		B2A144A91FE141010007ACC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A144A81FE141010007ACC7 /* Assets.xcassets */; };
 		B2A144AC1FE141010007ACC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A144AA1FE141010007ACC7 /* MainMenu.xib */; };
+		B2A144B51FE142A70007ACC7 /* TestedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A144B41FE142A70007ACC7 /* TestedView.swift */; };
+		B2A144B71FE148700007ACC7 /* TestedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A144B61FE148700007ACC7 /* TestedScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		B2A144AB1FE141010007ACC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B2A144AD1FE141010007ACC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2A144AE1FE141010007ACC7 /* ZoomWindowTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZoomWindowTest.entitlements; sourceTree = "<group>"; };
+		B2A144B41FE142A70007ACC7 /* TestedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestedView.swift; sourceTree = "<group>"; };
+		B2A144B61FE148700007ACC7 /* TestedScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestedScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B2A1449E1FE141010007ACC7 /* AppDelegate.swift */,
 				B2A144A01FE141010007ACC7 /* Document.swift */,
 				B2A144A21FE141010007ACC7 /* Document.xib */,
+				B2A144B41FE142A70007ACC7 /* TestedView.swift */,
+				B2A144B61FE148700007ACC7 /* TestedScrollView.swift */,
 				B2A144A81FE141010007ACC7 /* Assets.xcassets */,
 				B2A144AA1FE141010007ACC7 /* MainMenu.xib */,
 				B2A144AD1FE141010007ACC7 /* Info.plist */,
@@ -143,7 +149,9 @@
 			files = (
 				B2A144A71FE141010007ACC7 /* Document.xcdatamodeld in Sources */,
 				B2A144A11FE141010007ACC7 /* Document.swift in Sources */,
+				B2A144B71FE148700007ACC7 /* TestedScrollView.swift in Sources */,
 				B2A1449F1FE141010007ACC7 /* AppDelegate.swift in Sources */,
+				B2A144B51FE142A70007ACC7 /* TestedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
